@@ -2,10 +2,10 @@ library(tidyverse)
 library(dplyr)
 library(ggplot2)
 library(shiny)
-library(remotes)
+library(here)
+here("covid-variants.csv")
 
-
-Data <- read_csv(##paste in data your directory )
+Data <- read_csv("covid-variants.csv")
 
 Data$Date <- as.Date(Data$date)
 
